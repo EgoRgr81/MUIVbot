@@ -4,28 +4,26 @@
  <meta charset="utf-8">
  <title>Авторизация</title>
  <link rel="stylesheet" type="text/css" href="style.css">
+ <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
+
 <body>
     
-    
  <div class="images-container">
-  <img src="https://sun9-80.userapi.com/impg/hElcCsqiPc8FkmgPGBZQ99HhdgDqaLwbEXBrbA/zs1rhQ8lJ88.jpg?size=368x433&quality=96&sign=57a1470f40bce447f1536867f66f5785&type=album" class="image1">
-  <img src="https://sun9-80.userapi.com/impg/4qD8BmX5iPeUp7pW-PaTqE0q4rT-LdtLWKFoQg/bd6yBa60M60.jpg?size=188x29&quality=96&sign=07dda19c2abcafab8bbb99a09d79943a&type=album" class="image2" id="kak">
+  <img src="https://im.wampi.ru/2023/05/25/zs1rhQ8lJ88.jpg" class="image1">
+  <img src="https://ie.wampi.ru/2023/05/25/bd6yBa60M60.jpg" class="image2" id="kak">
  </div>
  
  <div class="buttons-container" id = "buttons">
-  <button id="student"><img src="https://sun9-49.userapi.com/impg/4D5CtX7Ew8RxQALUcb8HM5-ypOwuqEx0UCxemA/IGrBnKxKhUU.jpg?size=294x64&quality=96&sign=e8eebd0eebc9f37b603e5b8b55b6e9b0&type=album"  class="button1"></button>
-  <button id="prepod"><img src="https://sun9-65.userapi.com/impg/FWMFrDE3mFM59KeTKnYdSxcYHe_1HPnlEW_wVg/olVGeSFiNw4.jpg?size=296x65&quality=96&sign=8f7631dc1bfc2ec757fb7984f1641941&type=album"  class="button2"></button>
+  <button id="student"><img src="https://im.wampi.ru/2023/05/25/IGrBnKxKhUU.jpg"  class="button1"></button>
+  <button id="prepod"><img src="https://ic.wampi.ru/2023/05/25/olVGeSFiNw4.jpg"  class="button2"></button>
  </div>
- 
 
  <form id="login-form">
       <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Логин">
       <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Пароль">
-      <button id="vhod"><img src="https://sun9-57.userapi.com/impg/JUL2267LIMPHXscQbAIlv1OGqpyciBVmre5jdw/SPU2ccEu2uk.jpg?size=197x62&quality=96&sign=bf318bcbe2dd0770cf8a869d05f44cf8&type=album"  class="button3"></button>
+      <button id="vhod"><img src="https://ie.wampi.ru/2023/05/25/SPU2ccEu2uk.jpg"  class="button3"></button>
  </form>
-    
- <script src="https://telegram.org/js/telegram-web-app.js"></script>
  
  <script>
  let tg = window.Telegram.WebApp;
@@ -38,13 +36,13 @@
      document.getElementById("buttons").style.display = "none";
      document.getElementById("kak").style.display = "none";
      document.getElementById("login-form").style.display = "flex";
-     let choice = false
+     choice = false
  });
  prepod.addEventListener("click", () => {
     document.getElementById("buttons").style.display = "none";
     document.getElementById("kak").style.display = "none";
     document.getElementById("login-form").style.display = "flex";
-    let choice = true
+    choice = true
  });
  
  vhod.addEventListener("click", () => {
@@ -61,9 +59,7 @@
     tg.close();
  });
  
-     
  </script>
- 
 
 </body>
 </html>
